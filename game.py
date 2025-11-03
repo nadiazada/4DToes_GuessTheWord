@@ -20,7 +20,7 @@ Implements the handle_input() function.
 
 Task 4 — Main game flow
 
-Owner: Person 4
+Owner: James
 Focus: connect all functions together, run rounds, handle win/loss.
 Implements the play_game() function (calls all others)
 '''
