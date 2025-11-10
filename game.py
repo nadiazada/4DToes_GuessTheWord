@@ -5,7 +5,10 @@ Task 1 — Leader setup
 Owner: NILA
 Focus: getting the secret word, asking number of players, and printing rules.
 Implements the setup_game() function.
-
+blah blha 
+'''
+print("hello)
+'''
 Task 2 — Player input
 
 Owner: DELIHALA
