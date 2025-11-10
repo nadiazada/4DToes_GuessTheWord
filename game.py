@@ -8,10 +8,16 @@ Implements the setup_game() function.
 
 Task 2 — Player input
 
-Owner: DELIHALA
-Focus: one player’s turn — prompt and collect their input.
-Implements the player_turn() function.
-
+def player_turn(player_name):
+    """
+    Handles one player's turn.
+    Prompts the player to ask a question or make a guess.
+    Returns the player's input as a string.
+    """
+    print(f"\n{player_name}'s turn:")
+    user_input = input("Ask a question or make a guess: ").strip()
+    return user_input
+    
 Task 3 — Guess / question logic
 
 Owner: NADIA 
