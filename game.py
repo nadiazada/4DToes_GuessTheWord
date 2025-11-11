@@ -5,7 +5,34 @@ Task 1 — Leader setup
 Owner: NILA
 Focus: getting the secret word, asking number of players, and printing rules.
 Implements the setup_game() function.
+'''
 
+def setup_game(): 
+    print("=== Welcome to the Secret Word Guessing Game! ===")
+    print("""
+    How to play: 
+    - One leader secretly chooses a word (which will be hidden afterward!).
+    - 2 to 4 platers will take turns asking questions or making guesses.
+    - You have 10 turns total to guess correctly before the game ends! 
+    """) 
+    secret_word = input("Leader, please enter your secret word: ").strip().lower()
+    print("\n" * 40)
+    print("Secret word saved successfully!\n") 
+
+while True: 
+    try: 
+        num_platers = int(input("Enter number of players (2-4): "))
+        if 2 <= num_players <= 4:
+            break
+        else: 
+            print("Please choose between 2 to 4 players.")
+    except ValueError: 
+        print("Invalid input. Please enter a number between 2 to 4.")
+
+print(f"\nGame setup complete! {num_players} players will play.\n") 
+return secret_word, num_players
+
+'''
 Task 2 — Player input
 
 def player_turn(player_name):
