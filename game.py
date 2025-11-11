@@ -1,11 +1,9 @@
 #python code. Everything can go into one file 
-'''
-Task 1 — Leader setup
+'''Task 1 — Leader setup
 
 Owner: NILA
 Focus: getting the secret word, asking number of players, and printing rules.
-Implements the setup_game() function.
-'''
+Implements the setup_game() function.'''
 
 def setup_game(): 
     print("=== Welcome to the Secret Word Guessing Game! ===")
@@ -32,31 +30,26 @@ while True:
 print(f"\nGame setup complete! {num_players} players will play.\n") 
 return secret_word, num_players
 
-'''
-Task 2 — Player input
+'''Task 2 — Player input'''
 
 def player_turn(player_name):
-    """
-    Handles one player's turn.
-    Prompts the player to ask a question or make a guess.
-    Returns the player's input as a string.
-    """
     print(f"\n{player_name}'s turn:")
     user_input = input("Ask a question or make a guess: ").strip()
     return user_input
     
-Task 3 — Guess / question logic
+''' Task 3 — Guess / question logic
 
 Owner: NADIA 
 Focus: detect guesses vs questions, check if correct, and manage responses.
-Implements the handle_input() function.
+Implements the handle_input() function. '''
 
-Task 4 — Main game flow
+
+''' Task 4 — Main game flow
 
 Owner: JAMES
 Focus: connect all functions together, run rounds, handle win/loss.
-Implements the play_game() function (calls all others)
-'''
+Implements the play_game() function (calls all others) '''
+
 def handle_win_conditions(Player, Leader):
   if Player.guess() and Leader.guess():
     Player.declare_winner()
