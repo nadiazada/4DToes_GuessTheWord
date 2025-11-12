@@ -41,7 +41,35 @@ def player_turn(player_name):
 
 Owner: NADIA 
 Focus: detect guesses vs questions, check if correct, and manage responses.
-Implements the handle_input() function. '''
+Implements the handle_input() function.
+Checks what the player typed.
+ - If it starts with 'guess:', treat it as a guess and check correctness.
+ - Otherwise, treat it as a question for the leader.
+Returns True if the secret word was guessed correctly, otherwise False.'''
+def handle_input(user_input, secret_word, player_name):
+    # ---- check if it's a guess ----
+    if user_input.lower().startswith("guess:"):
+        # everything after 'guess:' is the guessed word
+        guess = user_input.split(":", 1)[1].strip().lower() #got this line from gpt bc didnt undrstand how to split 
+
+        # handle empty guess
+        if not guess:
+            print(" Format is: guess: <word>")
+            return False
+
+        # compare with secret word
+        if guess == secret_word.lower():
+            print(f"\n {player_name} guessed the secret word! It is '{secret_word}'.")
+            return True
+        else:
+            print(" Nope, that's not it.")
+            return False
+
+    # ---- otherwise, treat it as a normal question ----
+    else:
+        leader_answer = input(" Leader, your answer: ")
+        print(f" Leader says: {leader_answer}")
+        return False
 
 
 ''' Task 4 — Main game flow
