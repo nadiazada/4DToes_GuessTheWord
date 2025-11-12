@@ -1,4 +1,4 @@
-# Secret Word Guessing Game
+# Guess the Secret Word
 *A terminal game by Team Logic Breakers 🧠💥*  
 
 > “Can you outsmart the Leader and uncover the secret word before your turns run out?”
