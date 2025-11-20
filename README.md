@@ -12,8 +12,7 @@ This is a **simple, text-based Python game** where:
 - Each player can either:
   - Ask the Leader a **yes/no question**, or  
   - Guess with **`guess: <word>`**  
-- The game goes for up to **10 rounds**, and in each round every player gets one turn.  
-- If someone guesses correctly — they win!!  
+- If someone guesses correctly, they win!!  
 - If not... the secret is revealed at the end!
 
 ---
